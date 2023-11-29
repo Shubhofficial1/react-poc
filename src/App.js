@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import Typography from "./components/Typography";
 import Headline from "./components/Headline";
 import Body from "./components/Body";
+import Eyebrow from "./components/Eyebrow";
 
 const App = () => {
   const [name, setName] = useState("");
@@ -23,6 +24,7 @@ const App = () => {
 
   return (
     <>
+      {/* Body Component */}
       <Body>
         {/* Header Component */}
         <Header />
@@ -54,6 +56,9 @@ const App = () => {
 
           {/* Headline Component */}
           <Headline>News for the day</Headline>
+
+          {/* Eyebrow Component */}
+          <Eyebrow>Subtitle</Eyebrow>
         </Container>
         <Footer />
       </Body>

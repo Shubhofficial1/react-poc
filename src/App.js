@@ -7,6 +7,7 @@ import Input from "./components/Input";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Typography from "./components/Typography";
+import Headline from "./components/Headline";
 
 const App = () => {
   const [name, setName] = useState("");
@@ -48,6 +49,9 @@ const App = () => {
 
         {/* Typography Component */}
         <Typography variant={"h6"}>Hello</Typography>
+
+        {/* Headline Component */}
+        <Headline>News for the day</Headline>
       </Container>
       <Footer />
     </>

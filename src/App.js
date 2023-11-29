@@ -1,10 +1,17 @@
 import React from "react";
-import { Container, Typography, CssBaseline } from "@mui/material";
+import { Container, CssBaseline } from "@mui/material";
+import Button from "./components/Button";
+
 const App = () => {
+  const handleButtonClick = () => {
+    alert("Submit Button Clicked");
+  };
+
   return (
     <Container component="main">
       <CssBaseline />
-      <Typography variant="h6">Hello World</Typography>
+      {/* Button Component */}
+      <Button label="Submit" onClick={handleButtonClick} />
     </Container>
   );
 };

@@ -1,10 +1,11 @@
 import React from "react";
-
+import { Container, Typography, CssBaseline } from "@mui/material";
 const App = () => {
   return (
-    <>
-      <h1>Hello World</h1>
-    </>
+    <Container component="main">
+      <CssBaseline />
+      <Typography variant="h6">Hello World</Typography>
+    </Container>
   );
 };
 

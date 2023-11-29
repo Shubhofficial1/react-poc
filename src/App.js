@@ -10,6 +10,7 @@ import Typography from "./components/Typography";
 import Headline from "./components/Headline";
 import Body from "./components/Body";
 import Eyebrow from "./components/Eyebrow";
+import Card from "./components/Card";
 
 const App = () => {
   const [name, setName] = useState("");
@@ -20,6 +21,10 @@ const App = () => {
 
   const handleInputChange = (e) => {
     setName(e.target.value);
+  };
+
+  const handleReadMore = () => {
+    alert("Read More Button clicked");
   };
 
   return (
@@ -59,6 +64,16 @@ const App = () => {
 
           {/* Eyebrow Component */}
           <Eyebrow>Subtitle</Eyebrow>
+
+          {/* Card Component */}
+
+          <Card
+            image="https://images.pexels.com/photos/789750/pexels-photo-789750.jpeg?auto=compress&cs=tinysrgb&w=800"
+            alt="test"
+            headline="This is a test headline"
+            body="lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+            onClick={handleReadMore}
+          />
         </Container>
         <Footer />
       </Body>

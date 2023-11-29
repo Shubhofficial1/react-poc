@@ -11,6 +11,7 @@ import Headline from "./components/Headline";
 import Body from "./components/Body";
 import Eyebrow from "./components/Eyebrow";
 import Card from "./components/Card";
+import Form from "./components/Form";
 
 const App = () => {
   const [name, setName] = useState("");
@@ -74,6 +75,8 @@ const App = () => {
             body="lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
             onClick={handleReadMore}
           />
+          <br />
+          <Form />
         </Container>
         <Footer />
       </Body>

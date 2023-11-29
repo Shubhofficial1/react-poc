@@ -1,5 +1,5 @@
 import React from "react";
-import { Card as MuiCard, Stack } from "@mui/material";
+import { Card as MuiCard } from "@mui/material";
 import CardContent from "@mui/material/CardContent";
 import CardActions from "@mui/material/CardActions";
 import Button from "@mui/material/Button";

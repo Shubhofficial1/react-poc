@@ -8,6 +8,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Typography from "./components/Typography";
 import Headline from "./components/Headline";
+import Body from "./components/Body";
 
 const App = () => {
   const [name, setName] = useState("");
@@ -22,38 +23,40 @@ const App = () => {
 
   return (
     <>
-      {/* Header Component */}
-      <Header />
-      <Container component="main">
-        <CssBaseline />
+      <Body>
+        {/* Header Component */}
+        <Header />
+        <Container component="main">
+          <CssBaseline />
 
-        {/* Image Component */}
-        <Image
-          src={
-            "https://images.pexels.com/photos/789750/pexels-photo-789750.jpeg?auto=compress&cs=tinysrgb&w=800"
-          }
-          alt={"Johnson & Johnson"}
-        />
-        <br />
+          {/* Image Component */}
+          <Image
+            src={
+              "https://images.pexels.com/photos/789750/pexels-photo-789750.jpeg?auto=compress&cs=tinysrgb&w=800"
+            }
+            alt={"Johnson & Johnson"}
+          />
+          <br />
 
-        {/* Button Component */}
-        <Button label="Submit" onClick={handleButtonClick} />
-        <br />
+          {/* Button Component */}
+          <Button label="Submit" onClick={handleButtonClick} />
+          <br />
 
-        {/* Link Component */}
-        <Link href={"/home"}>Go to home</Link>
-        <br />
+          {/* Link Component */}
+          <Link href={"/home"}>Go to home</Link>
+          <br />
 
-        {/* Input Component */}
-        <Input label="Name" value={name} onChange={handleInputChange} />
+          {/* Input Component */}
+          <Input label="Name" value={name} onChange={handleInputChange} />
 
-        {/* Typography Component */}
-        <Typography variant={"h6"}>Hello</Typography>
+          {/* Typography Component */}
+          <Typography variant={"h6"}>Hello</Typography>
 
-        {/* Headline Component */}
-        <Headline>News for the day</Headline>
-      </Container>
-      <Footer />
+          {/* Headline Component */}
+          <Headline>News for the day</Headline>
+        </Container>
+        <Footer />
+      </Body>
     </>
   );
 };

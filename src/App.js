@@ -5,6 +5,7 @@ import Image from "./components/Image";
 import Link from "./components/Link";
 import Input from "./components/Input";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 const App = () => {
   const [name, setName] = useState("");
@@ -44,6 +45,7 @@ const App = () => {
         {/* Input Component */}
         <Input label="Name" value={name} onChange={handleInputChange} />
       </Container>
+      <Footer />
     </>
   );
 };

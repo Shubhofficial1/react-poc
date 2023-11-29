@@ -6,6 +6,7 @@ import Link from "./components/Link";
 import Input from "./components/Input";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Typography from "./components/Typography";
 
 const App = () => {
   const [name, setName] = useState("");
@@ -44,6 +45,9 @@ const App = () => {
 
         {/* Input Component */}
         <Input label="Name" value={name} onChange={handleInputChange} />
+
+        {/* Typography Component */}
+        <Typography variant={"h6"}>Hello</Typography>
       </Container>
       <Footer />
     </>

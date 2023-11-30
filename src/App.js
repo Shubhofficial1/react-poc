@@ -15,6 +15,8 @@ import Form from "./components/Form";
 
 const App = () => {
   const [name, setName] = useState("");
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
 
   const handleButtonClick = () => {
     alert("Submit Button Clicked");
@@ -77,12 +79,22 @@ const App = () => {
           <br />
 
           {/* Form Component */}
-          <Form />
+          <Form
+            username={username}
+            password={password}
+            onNameChange={(e) => setUsername(e.target.value)}
+            onPasswordChange={(e) => setPassword(e.target.value)}
+            onSubmit={() => {
+              console.log("Form Submitted");
+              setUsername("");
+              setPassword("");
+            }}
+          />
         </Container>
 
         {/* Footer Component */}
         <Footer
-          text={"&copy; 2020-2023. All rights reserved 🚀"}
+          text={"2020-2023. All rights reserved 🚀"}
           variant="subtitle1"
         />
       </Body>

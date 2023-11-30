@@ -1,15 +1,21 @@
-import React, { useState } from "react";
+import React from "react";
 import { TextField, Button } from "@mui/material";
 
-const Form = () => {
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
-
+const Form = ({
+  username,
+  password,
+  onNameChange,
+  onPasswordChange,
+  onSubmit,
+}) => {
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    // Form submit logic to be written here
     console.log(`UserName : ${username} `);
     console.log(`Password : ${password} `);
+
+    if (onSubmit) {
+      onSubmit({ username, password });
+    }
   };
   return (
     <form>
@@ -17,15 +23,16 @@ const Form = () => {
         label="Username"
         variant="outlined"
         value={username}
-        onChange={(e) => setUsername(e.target.value)}
+        size="small"
+        onChange={onNameChange}
       />
-
       <TextField
         label="Password"
         variant="outlined"
         type="password"
         value={password}
-        onChange={(e) => setPassword(e.target.value)}
+        size="small"
+        onChange={onPasswordChange}
       />
 
       <Button variant="contained" color="primary" onClick={handleFormSubmit}>

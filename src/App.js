@@ -33,7 +33,7 @@ const App = () => {
       {/* Body Component */}
       <Body>
         {/* Header Component */}
-        <Header />
+        <Header text="Logo" />
         <Container component="main">
           <CssBaseline />
 

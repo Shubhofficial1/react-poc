@@ -16,7 +16,7 @@ const Card = ({ image, alt, headline, body, onClick }) => {
         </Typography>
         <Typography variant="body2">{body}</Typography>
       </CardContent>
-      <CardActions>
+      <CardActions sx={{ display: "flex", justifyContent: "flex-end" }}>
         <Button size="small" onClick={onClick}>
           Read More
         </Button>

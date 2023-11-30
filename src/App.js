@@ -64,7 +64,7 @@ const App = () => {
           <Headline text="Sample Headline"></Headline>
 
           {/* Eyebrow Component */}
-          <Eyebrow>Subtitle</Eyebrow>
+          <Eyebrow variant="subtitle1">Subtitle</Eyebrow>
 
           {/* Card Component */}
           <Card

@@ -10,7 +10,9 @@ export default {
       options: ["primary", "secondary"],
     },
     size: {
-      type: "select",
+      control: {
+        type: "radio",
+      },
       options: ["small", "medium"],
     },
   },

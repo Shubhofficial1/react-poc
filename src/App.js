@@ -58,7 +58,7 @@ const App = () => {
           <Input label="Name" value={name} onChange={handleInputChange} />
 
           {/* Typography Component */}
-          <Typography variant={"h6"}>Hello</Typography>
+          <Typography variant={"overline"}>Hello</Typography>
 
           {/* Headline Component */}
           <Headline text="Sample Headline"></Headline>

@@ -27,7 +27,7 @@ export default {
   },
 };
 
-const Template = (args) => <Typography {...args}>Sample text</Typography>;
+const Template = (args) => <Typography {...args}>Sample text </Typography>;
 
 export const Heading1 = Template.bind({});
 Heading1.args = {
@@ -35,6 +35,6 @@ Heading1.args = {
 };
 
 export const Heading2 = Template.bind({});
-Heading1.args = {
+Heading2.args = {
   variant: "h2",
 };

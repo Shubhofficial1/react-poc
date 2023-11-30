@@ -61,7 +61,7 @@ const App = () => {
           <Typography variant={"h6"}>Hello</Typography>
 
           {/* Headline Component */}
-          <Headline>News for the day</Headline>
+          <Headline text="Sample Headline"></Headline>
 
           {/* Eyebrow Component */}
           <Eyebrow>Subtitle</Eyebrow>
@@ -81,7 +81,10 @@ const App = () => {
         </Container>
 
         {/* Footer Component */}
-        <Footer text={"&copy; 2020-2023. All rights reserved 🚀"}  variant="subtitle1"/>
+        <Footer
+          text={"&copy; 2020-2023. All rights reserved 🚀"}
+          variant="subtitle1"
+        />
       </Body>
     </>
   );

@@ -1,12 +1,15 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 
-const Footer = () => {
+const Footer = ({ text, variant = "subtitle1" }) => {
   return (
-    <Box>
-      <Typography style={{ textAlign: "center" }} variant="h6">
-        &copy; 2020-2023. All rights reserved 🚀
-      </Typography>
+    <Box
+      sx={{
+        display: "flex",
+        justifyContent: "center",
+      }}
+    >
+      <Typography variant={variant}>&copy; {text}</Typography>
     </Box>
   );
 };

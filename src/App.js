@@ -67,7 +67,6 @@ const App = () => {
           <Eyebrow>Subtitle</Eyebrow>
 
           {/* Card Component */}
-
           <Card
             image="https://images.pexels.com/photos/440731/pexels-photo-440731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
             alt="test"
@@ -76,9 +75,13 @@ const App = () => {
             onClick={handleReadMore}
           />
           <br />
+
+          {/* Form Component */}
           <Form />
         </Container>
-        <Footer />
+
+        {/* Footer Component */}
+        <Footer text={"&copy; 2020-2023. All rights reserved 🚀"}  variant="subtitle1"/>
       </Body>
     </>
   );

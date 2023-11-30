@@ -11,7 +11,7 @@ export default {
     },
     size: {
       type: "select",
-      options: ["small", "medium", "large"],
+      options: ["small", "medium"],
     },
   },
 };

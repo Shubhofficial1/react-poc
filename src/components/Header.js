@@ -1,11 +1,11 @@
 import React from "react";
 import { AppBar, Toolbar, Typography } from "@mui/material";
 
-const Header = () => {
+const Header = ({ text }) => {
   return (
     <AppBar position="static">
       <Toolbar>
-        <Typography variant="h6">Logo</Typography>
+        <Typography variant="h6">{text}</Typography>
       </Toolbar>
     </AppBar>
   );

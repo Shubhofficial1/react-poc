@@ -40,7 +40,7 @@ const App = () => {
           {/* Image Component */}
           <Image
             src={
-              "https://images.pexels.com/photos/789750/pexels-photo-789750.jpeg?auto=compress&cs=tinysrgb&w=800"
+              "https://images.pexels.com/photos/440731/pexels-photo-440731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
             }
             alt={"Johnson & Johnson"}
           />
@@ -69,7 +69,7 @@ const App = () => {
           {/* Card Component */}
 
           <Card
-            image="https://images.pexels.com/photos/789750/pexels-photo-789750.jpeg?auto=compress&cs=tinysrgb&w=800"
+            image="https://images.pexels.com/photos/440731/pexels-photo-440731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
             alt="test"
             headline="This is a test headline"
             body="lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"

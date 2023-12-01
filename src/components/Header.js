@@ -3,9 +3,16 @@ import { AppBar, Toolbar, Typography } from "@mui/material";
 
 const Header = ({ text }) => {
   return (
-    <AppBar position="static">
+    <AppBar
+      position="static"
+      sx={{
+        backgroundColor: "#0E1A2A",
+      }}
+    >
       <Toolbar>
-        <Typography variant="h6">{text}</Typography>
+        <Typography variant="h5" sx={{ flexGrow: 1 }}>
+          {text}
+        </Typography>
       </Toolbar>
     </AppBar>
   );

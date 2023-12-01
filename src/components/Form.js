@@ -12,9 +12,8 @@ const Form = ({
     e.preventDefault();
     console.log(`UserName : ${username} `);
     console.log(`Password : ${password} `);
-
     if (onSubmit) {
-      onSubmit({ username, password });
+      onSubmit();
     }
   };
   return (
@@ -23,19 +22,66 @@ const Form = ({
         label="Username"
         variant="outlined"
         value={username}
-        size="small"
+        size="large"
         onChange={onNameChange}
+        sx={{
+          backgroundColor: "#0E1A2A",
+          color: "#fff",
+          borderRadius: "5px",
+          width: "300px",
+          marginRight: "20px",
+          "& input": { color: "#fff" },
+          "& label": { color: "#fff" },
+          "& .MuiOutlinedInput-root": {
+            "& fieldset": {
+              borderColor: "transparent",
+            },
+            "&:hover fieldset": {
+              borderColor: "transparent",
+            },
+            "&.Mui-focused fieldset": {
+              borderColor: "transparent",
+              boxShadow: "none",
+            },
+          },
+        }}
       />
       <TextField
         label="Password"
         variant="outlined"
         type="password"
         value={password}
-        size="small"
+        size="large"
         onChange={onPasswordChange}
+        sx={{
+          backgroundColor: "#0E1A2A",
+          color: "#fff",
+          borderRadius: "5px",
+          width: "300px",
+          marginRight: "20px",
+          "& input": { color: "#fff" },
+          "& label": { color: "#fff" },
+          "& .MuiOutlinedInput-root": {
+            "& fieldset": {
+              borderColor: "transparent",
+            },
+            "&:hover fieldset": {
+              borderColor: "transparent",
+            },
+            "&.Mui-focused fieldset": {
+              borderColor: "transparent",
+              boxShadow: "none",
+            },
+          },
+        }}
       />
 
-      <Button variant="contained" color="primary" onClick={handleFormSubmit}>
+      <Button
+        // disabled={!username || !password}
+        variant="contained"
+        color="primary"
+        onClick={handleFormSubmit}
+      >
         Submit
       </Button>
     </form>

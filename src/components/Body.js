@@ -1,11 +1,19 @@
 import React from "react";
-import { Paper } from "@mui/material";
 
 const Body = ({ children }) => {
   return (
-    <Paper sx={{ padding: "10px" }} elevation={3}>
+    <div
+      style={{
+        backgroundColor: "#111419",
+        color: "#333",
+        minHeight: "100vh",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+      }}
+    >
       {children}
-    </Paper>
+    </div>
   );
 };
 

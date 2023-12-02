@@ -5,7 +5,6 @@ const Body = ({ children }) => {
     <div
       style={{
         backgroundColor: "#111419",
-        color: "#333",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",

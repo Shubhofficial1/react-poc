@@ -4,17 +4,17 @@ import CardContent from "@mui/material/CardContent";
 import CardActions from "@mui/material/CardActions";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import CardMedia from "@mui/material/CardMedia";
+import Image from "../components/Image";
 
 const Card = ({ image, alt, headline, body, onClick }) => {
   return (
     <MuiCard
       sx={{
         backgroundColor: "#0F1A2A",
-        marginTop: "10px",
       }}
     >
-      <CardMedia sx={{ height: 160 }} image={image} title={alt} />
+      {/* Custom Image Component */}
+      <Image src={image} alt={alt} height={"160px"} />
       <CardContent>
         <Typography
           gutterBottom

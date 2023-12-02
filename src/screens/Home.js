@@ -38,8 +38,7 @@ const Home = () => {
             Travo
           </Typography>
         </Header>
-
-        <Container maxWidth="xl" component="main">
+        <Container maxWidth="xl" component="main" flexGrow="1">
           <CssBaseline />
 
           {/* Hero Section */}
@@ -178,7 +177,7 @@ const Home = () => {
                 Subscribe to our newsletter
               </Typography>
             </Box>
-            <Box marginTop={"20px"} height={"200px"}>
+            <Box margin={"20px 0px"}>
               <Form
                 username={username}
                 password={password}
@@ -191,6 +190,7 @@ const Home = () => {
             </Box>
           </Box>
         </Container>
+
         {/* Footer Section */}
         <Footer variant="subtitle1">
           <Box
@@ -202,7 +202,7 @@ const Home = () => {
             {Links?.map((link) => (
               <Link key={link._id} href={link.href}>
                 {link.name}
-                {"        |      "}
+                {"    |    "}
               </Link>
             ))}
           </Box>

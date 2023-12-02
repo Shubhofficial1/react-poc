@@ -1,5 +1,7 @@
 import React from "react";
-import { TextField, Button } from "@mui/material";
+import { Box } from "@mui/material";
+import Input from "../components/Input";
+import Button from "../components/Button";
 
 const Form = ({
   username,
@@ -10,80 +12,91 @@ const Form = ({
 }) => {
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    console.log(`UserName : ${username} `);
-    console.log(`Password : ${password} `);
     if (onSubmit) {
       onSubmit();
     }
   };
-  return (
-    <form>
-      <TextField
-        label="Username"
-        variant="outlined"
-        value={username}
-        size="large"
-        onChange={onNameChange}
-        sx={{
-          backgroundColor: "#0E1A2A",
-          color: "#fff",
-          borderRadius: "5px",
-          width: "300px",
-          marginRight: "20px",
-          "& input": { color: "#fff" },
-          "& label": { color: "#fff" },
-          "& .MuiOutlinedInput-root": {
-            "& fieldset": {
-              borderColor: "transparent",
-            },
-            "&:hover fieldset": {
-              borderColor: "transparent",
-            },
-            "&.Mui-focused fieldset": {
-              borderColor: "transparent",
-              boxShadow: "none",
-            },
-          },
-        }}
-      />
-      <TextField
-        label="Password"
-        variant="outlined"
-        type="password"
-        value={password}
-        size="large"
-        onChange={onPasswordChange}
-        sx={{
-          backgroundColor: "#0E1A2A",
-          color: "#fff",
-          borderRadius: "5px",
-          width: "300px",
-          marginRight: "20px",
-          "& input": { color: "#fff" },
-          "& label": { color: "#fff" },
-          "& .MuiOutlinedInput-root": {
-            "& fieldset": {
-              borderColor: "transparent",
-            },
-            "&:hover fieldset": {
-              borderColor: "transparent",
-            },
-            "&.Mui-focused fieldset": {
-              borderColor: "transparent",
-              boxShadow: "none",
-            },
-          },
-        }}
-      />
 
-      <Button
-        // disabled={!username || !password}
-        variant="contained"
-        color="primary"
-        onClick={handleFormSubmit}
+  return (
+    <form
+      style={{
+        display: "flex",
+        alignItems: "center",
+      }}
+    >
+      <Box
+        display={"flex"}
+        flexDirection={"column"}
+        justifyContent={"center"}
+        alignItems={"center"}
+        width={"500px"}
       >
-        Submit
-      </Button>
+        <Input
+          label="Username"
+          value={username}
+          size="large"
+          onChange={onNameChange}
+          style={{
+            backgroundColor: "#0E1A2A",
+            color: "#fff",
+            borderRadius: "5px",
+            width: "100%",
+            marginBottom: "10px",
+            "& input": { color: "#fff" },
+            "& label": { color: "#fff" },
+            "& .MuiOutlinedInput-root": {
+              "& fieldset": {
+                borderColor: "transparent",
+              },
+              "&:hover fieldset": {
+                borderColor: "transparent",
+              },
+              "&.Mui-focused fieldset": {
+                borderColor: "transparent",
+                boxShadow: "none",
+              },
+            },
+          }}
+        />
+
+        <Input
+          label="Password"
+          type="password"
+          value={password}
+          size="large"
+          onChange={onPasswordChange}
+          style={{
+            backgroundColor: "#0E1A2A",
+            color: "#fff",
+            borderRadius: "5px",
+            width: "100%",
+            marginBottom: "10px",
+            "& input": { color: "#fff" },
+            "& label": { color: "#fff" },
+            "& .MuiOutlinedInput-root": {
+              "& fieldset": {
+                borderColor: "transparent",
+              },
+              "&:hover fieldset": {
+                borderColor: "transparent",
+              },
+              "&.Mui-focused fieldset": {
+                borderColor: "transparent",
+                boxShadow: "none",
+              },
+            },
+          }}
+        />
+
+        <Button
+          variant="contained"
+          color="primary"
+          onClick={handleFormSubmit}
+          style={{ width: "100%" }}
+        >
+          Submit
+        </Button>
+      </Box>
     </form>
   );
 };

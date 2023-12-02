@@ -11,6 +11,7 @@ const Footer = ({ children }) => {
         width: "100%",
         backgroundColor: "#02213D",
         padding: "30px 0px",
+        marginTop: "auto",
       }}
     >
       {children}

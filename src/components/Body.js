@@ -6,10 +6,10 @@ const Body = ({ children }) => {
       style={{
         backgroundColor: "#111419",
         color: "#333",
-        minHeight: "100vh",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
+        minHeight: "100vh",
       }}
     >
       {children}

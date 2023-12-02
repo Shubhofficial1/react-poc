@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../components/Button";
+import { action } from "@storybook/addon-actions";
 
 export default {
   title: "Button",
@@ -33,7 +34,7 @@ Primary.args = {
   color: "primary",
   size: "medium",
   variant: "contained",
-  onClick: () => alert("Primary Button clicked!"),
+  onClick: action("Primary Button Clicked"),
   children: "Submit",
 };
 
@@ -42,6 +43,6 @@ Secondary.args = {
   color: "secondary",
   size: "medium",
   variant: "contained",
-  onClick: () => alert("Secondary Button clicked!"),
+  onClick: action("Secondary Button Clicked"),
   children: "Submit",
 };

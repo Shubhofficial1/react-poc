@@ -7,9 +7,16 @@ const Button = ({
   size = "medium",
   onClick,
   children,
+  style,
 }) => {
   return (
-    <MuiButton variant={variant} color={color} size={size} onClick={onClick}>
+    <MuiButton
+      variant={variant}
+      color={color}
+      size={size}
+      onClick={onClick}
+      sx={style}
+    >
       {children}
     </MuiButton>
   );

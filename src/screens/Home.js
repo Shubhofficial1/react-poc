@@ -6,7 +6,10 @@ import Typography from "../components/Typography";
 import Button from "../components/Button";
 import Card from "../components/Card";
 import Form from "../components/Form";
+import Footer from "../components/Footer";
 import { Trips } from "../data/trips";
+import { Links } from "../data/links";
+import Link from "../components/Link";
 
 const Home = () => {
   const [username, setUsername] = useState("");
@@ -23,6 +26,7 @@ const Home = () => {
   return (
     <>
       <Body>
+        {/* Header Component */}
         <Header>
           <Typography
             variant={"h4"}
@@ -34,6 +38,7 @@ const Home = () => {
             Travo
           </Typography>
         </Header>
+
         <Container maxWidth="xl" component="main">
           <CssBaseline />
 
@@ -182,9 +187,26 @@ const Home = () => {
               />
             </Box>
           </Box>
-
-          {/* Footer Section */}
         </Container>
+        {/* Footer Section */}
+        <Footer variant="subtitle1">
+          <Box
+            display={"flex"}
+            flexDirection={"row"}
+            marginBottom={"10px"}
+            flexWrap
+          >
+            {Links?.map((link) => (
+              <Link key={link._id} href={link.href}>
+                {link.name}
+                {"        |      "}
+              </Link>
+            ))}
+          </Box>
+          <Typography variant={"caption"}>
+            &copy; 2020-23 All Rights Reserved 🚀
+          </Typography>
+        </Footer>
       </Body>
     </>
   );

@@ -10,6 +10,7 @@ const Link = ({ href, children }) => {
         textDecoration: "none",
         fontWeight: "bold",
         fontSize: "14px",
+        marginRight: "10px",
       }}
     >
       {children}

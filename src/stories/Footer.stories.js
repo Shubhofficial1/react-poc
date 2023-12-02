@@ -1,28 +1,27 @@
 import React from "react";
 import Footer from "../components/Footer";
+import Typography from "../components/Typography";
 
 export default {
   title: "Footer",
   component: Footer,
   argTypes: {
-    text: {
+    children: {
       type: {
         control: "text",
       },
-    },
-    variant: {
-      control: {
-        type: "radio",
-      },
-      options: ["subtitle1", "subtitle2", "body1", "body2", "caption"],
     },
   },
 };
 
 const Template = (args) => <Footer {...args} />;
 export const Default = Template.bind({});
-
 Default.args = {
-  text: " 2020-2023. All rights reserved 🚀",
-  variant: "subtitle1",
+  children: (
+    <>
+      <Typography variant={"caption"} style={{ color: "white" }}>
+        &copy; 2020-23 All Rights Reserved 🚀
+      </Typography>
+    </>
+  ),
 };

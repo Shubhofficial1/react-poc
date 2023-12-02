@@ -1,15 +1,19 @@
 import React from "react";
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 
-const Footer = ({ text, variant = "subtitle1" }) => {
+const Footer = ({ children }) => {
   return (
     <Box
       sx={{
         display: "flex",
-        justifyContent: "center",
+        flexDirection: "column",
+        alignItems: "center",
+        width: "100%",
+        backgroundColor: "#02213D",
+        padding: "30px 0px",
       }}
     >
-      <Typography variant={variant}>&copy; {text}</Typography>
+      {children}
     </Box>
   );
 };

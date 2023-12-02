@@ -127,6 +127,7 @@ const Home = () => {
                     alt={trip.alt}
                     headline={trip.headline}
                     body={trip.body}
+                    location={trip.location}
                   />
                 </Grid>
               ))}
@@ -148,6 +149,7 @@ const Home = () => {
                 }
                 alt="Soothing Bali Beaches"
                 headline="Soothing Bali Beaches"
+                location={"Indonesia"}
                 body="Relax on the pristine beaches of Bali, where turquoise waters meet golden sands, and the gentle rustle of palm trees provides a serene soundtrack to your tropical escape.Relax on the pristine beaches of Bali, where turquoise waters meet golden sands, and the gentle rustle of palm trees provides a serene soundtrack to your tropical escape.
               Relax on the pristine beaches of Bali, where turquoise waters meet golden sands, and the gentle rustle of palm trees provides a serene soundtrack to your tropical escape.
               "
@@ -159,6 +161,7 @@ const Home = () => {
                 }
                 alt="Enchanting Venice Canals"
                 headline="Enchanting Venice Canals"
+                location={"Italy"}
                 body="Embark on a gondola journey through Venice's winding canals, where historic architecture reflects on tranquil waters, and every bridge holds a story of timeless romance.Embark on a gondola journey through Venice's winding canals, where historic architecture reflects on tranquil waters, and every bridge holds a story of timeless romance.Embark on a gondola journey through Venice's winding canals, where historic architecture reflects on tranquil waters, and every bridge holds a story of timeless romance.
               "
               />

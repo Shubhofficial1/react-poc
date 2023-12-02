@@ -5,7 +5,7 @@ export default {
   title: "Header",
   component: Header,
   argTypes: {
-    text: {
+    children: {
       type: {
         control: "text",
       },
@@ -15,7 +15,7 @@ export default {
 
 const Template = (args) => <Header {...args} />;
 
-export const Default = Template.bind({});
-Default.args = {
-  text: "Logo",
+export const Nav = Template.bind({});
+Nav.args = {
+  children: "Travo",
 };

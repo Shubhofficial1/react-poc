@@ -23,7 +23,17 @@ const Home = () => {
   return (
     <>
       <Body>
-        <Header text="Traveller" />
+        <Header>
+          <Typography
+            variant={"h4"}
+            style={{
+              fontFamily: "'Ephesis', cursive !important",
+              fontWeight: "500",
+            }}
+          >
+            Travo
+          </Typography>
+        </Header>
         <Container maxWidth="xl" component="main">
           <CssBaseline />
 

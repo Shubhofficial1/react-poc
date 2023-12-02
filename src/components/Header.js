@@ -1,7 +1,7 @@
 import React from "react";
-import { AppBar, Toolbar, Typography } from "@mui/material";
+import { AppBar, Toolbar } from "@mui/material";
 
-const Header = ({ text }) => {
+const Header = ({ children }) => {
   return (
     <AppBar
       position="static"
@@ -9,11 +9,7 @@ const Header = ({ text }) => {
         backgroundColor: "#0E1A2A",
       }}
     >
-      <Toolbar>
-        <Typography variant="h5" sx={{ flexGrow: 1 }}>
-          {text}
-        </Typography>
-      </Toolbar>
+      <Toolbar>{children}</Toolbar>
     </AppBar>
   );
 };

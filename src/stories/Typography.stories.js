@@ -20,8 +20,6 @@ export default {
         "subtitle2",
         "body1",
         "body2",
-        "caption",
-        "overline",
       ],
     },
   },
@@ -29,12 +27,17 @@ export default {
 
 const Template = (args) => <Typography {...args}>Sample text </Typography>;
 
-export const Heading1 = Template.bind({});
-Heading1.args = {
-  variant: "h1",
+export const Headline = Template.bind({});
+Headline.args = {
+  variant: "h2",
 };
 
-export const Heading2 = Template.bind({});
-Heading2.args = {
-  variant: "h2",
+export const Body = Template.bind({});
+Body.args = {
+  variant: "body1",
+};
+
+export const Eyebrow = Template.bind({});
+Eyebrow.args = {
+  variant: "subtitle1",
 };

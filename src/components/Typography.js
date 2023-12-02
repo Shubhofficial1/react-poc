@@ -3,7 +3,7 @@ import { Typography as MuiTypography } from "@mui/material";
 
 const Typography = ({ variant, children, style }) => {
   return (
-    <MuiTypography variant={variant} {...style}>
+    <MuiTypography variant={variant} sx={style}>
       {children}
     </MuiTypography>
   );

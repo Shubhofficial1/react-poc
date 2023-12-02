@@ -39,14 +39,21 @@ const Home = () => {
               textAlign: "center",
             }}
           >
-            <Headline
+            {/* Headline Component */}
+            <Typography
               variant={"h2"}
               style={{
+                fontWeight: "bold",
                 textTransform: "capitalize",
+                background:
+                  "linear-gradient(90deg, #4694dc 12.29%, #4abcd5 50%), #ffffff",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+                backgroundClip: "text",
               }}
             >
               Explore Your Next Adventure Now
-            </Headline>
+            </Typography>
             <Box
               sx={{
                 marginTop: "40px",
@@ -54,7 +61,8 @@ const Home = () => {
                 textAlign: "center",
               }}
             >
-              <Typography variant={"h6"} style={{ fontWeight: "500" }}>
+              {/* Body Component */}
+              <Typography variant={"body1"} style={{ fontWeight: "500" }}>
                 Discover the world's wonders with our curated travel
                 experiences, turning your wanderlust into extraordinary
                 adventures.
@@ -62,7 +70,7 @@ const Home = () => {
             </Box>
 
             <Box sx={{ marginTop: "40px" }}>
-              <Button size="large">Explore</Button>
+              <Button size="large">Explore </Button>
             </Box>
           </Box>
 

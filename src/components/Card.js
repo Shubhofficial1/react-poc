@@ -2,11 +2,14 @@ import React from "react";
 import { Card as MuiCard } from "@mui/material";
 import CardContent from "@mui/material/CardContent";
 import CardActions from "@mui/material/CardActions";
-import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Image from "../components/Image";
+import Link from "../components/Link";
+import { generateHrefFromHeadline } from "../utils/generateHrefFromHeadline";
 
-const Card = ({ image, alt, headline, body, onClick }) => {
+const Card = ({ src, alt, headline, body }) => {
+  const href = generateHrefFromHeadline(headline);
+
   return (
     <MuiCard
       sx={{
@@ -14,7 +17,7 @@ const Card = ({ image, alt, headline, body, onClick }) => {
       }}
     >
       {/* Custom Image Component */}
-      <Image src={image} alt={alt} height={"160px"} />
+      <Image src={src} alt={alt} height={"160px"} />
       <CardContent>
         <Typography
           gutterBottom
@@ -44,9 +47,8 @@ const Card = ({ image, alt, headline, body, onClick }) => {
         </Typography>
       </CardContent>
       <CardActions sx={{ display: "flex", justifyContent: "flex-end" }}>
-        <Button size="small" onClick={onClick}>
-          Read More
-        </Button>
+        {/* Link Component */}
+        <Link href={`/places${href}`}>Read More</Link>
       </CardActions>
     </MuiCard>
   );

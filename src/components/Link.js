@@ -2,7 +2,19 @@ import React from "react";
 import { Link as MuiLink } from "@mui/material";
 
 const Link = ({ href, children }) => {
-  return <MuiLink href={href}>{children}</MuiLink>;
+  return (
+    <MuiLink
+      gutterBottom
+      href={href}
+      sx={{
+        textDecoration: "none",
+        fontWeight: "bold",
+        fontSize: "14px",
+      }}
+    >
+      {children}
+    </MuiLink>
+  );
 };
 
 export default Link;

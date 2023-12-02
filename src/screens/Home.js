@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Container, CssBaseline, Box, Grid, Stack } from "@mui/material";
 import Body from "../components/Body";
 import Header from "../components/Header";
-import Headline from "../components/Headline";
 import Typography from "../components/Typography";
 import Button from "../components/Button";
 import Card from "../components/Card";
@@ -109,7 +108,7 @@ const Home = () => {
                   sx={{ margin: "20px 0px" }}
                 >
                   <Card
-                    image={trip.image}
+                    src={trip.src}
                     alt={trip.alt}
                     headline={trip.headline}
                     body={trip.body}
@@ -129,7 +128,7 @@ const Home = () => {
             </Typography>
             <Stack direction={"row"} spacing={2}>
               <Card
-                image={
+                src={
                   "https://images.pexels.com/photos/2707756/pexels-photo-2707756.jpeg?auto=compress&cs=tinysrgb&w=1200"
                 }
                 alt="Soothing Bali Beaches"
@@ -140,7 +139,7 @@ const Home = () => {
               />
 
               <Card
-                image={
+                src={
                   "https://images.pexels.com/photos/208701/pexels-photo-208701.jpeg?auto=compress&cs=tinysrgb&w=1200"
                 }
                 alt="Enchanting Venice Canals"

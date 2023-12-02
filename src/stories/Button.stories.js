@@ -6,14 +6,22 @@ export default {
   component: Button,
   argTypes: {
     color: {
-      type: "select",
+      control: {
+        type: "radio",
+      },
       options: ["primary", "secondary"],
+    },
+    variant: {
+      control: {
+        type: "radio",
+      },
+      options: ["text", "contained", "outlined"],
     },
     size: {
       control: {
         type: "radio",
       },
-      options: ["small", "medium"],
+      options: ["small", "medium", "large"],
     },
   },
 };
@@ -22,16 +30,18 @@ const Template = (args) => <Button {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
-  label: "Submit",
   color: "primary",
   size: "medium",
+  variant: "contained",
   onClick: () => alert("Primary Button clicked!"),
+  children: "Submit",
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
-  label: "Submit",
   color: "secondary",
   size: "medium",
+  variant: "contained",
   onClick: () => alert("Secondary Button clicked!"),
+  children: "Submit",
 };

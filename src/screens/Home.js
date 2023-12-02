@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Container, CssBaseline, Box, Grid } from "@mui/material";
+import { Container, CssBaseline, Box, Grid, Stack } from "@mui/material";
 import Body from "../components/Body";
 import Header from "../components/Header";
 import Headline from "../components/Headline";
@@ -62,7 +62,7 @@ const Home = () => {
             </Box>
 
             <Box sx={{ marginTop: "40px" }}>
-              <Button label={"Explore"} size="large" />
+              <Button size="large">Explore</Button>
             </Box>
           </Box>
 
@@ -79,7 +79,9 @@ const Home = () => {
               <Typography variant={"h6"} style={{ fontWeight: "600" }}>
                 Plan Your Next Trip
               </Typography>
-              <Button variant="text" label={"View all"} size="small" />
+              <Button variant="text" size="small">
+                View All
+              </Button>
             </Box>
             <Grid
               container
@@ -117,16 +119,28 @@ const Home = () => {
             >
               Trending now
             </Typography>
-            <Card
-              image={
-                "https://images.pexels.com/photos/2707756/pexels-photo-2707756.jpeg?auto=compress&cs=tinysrgb&w=1200"
-              }
-              alt="Soothing Bali Beaches"
-              headline="Soothing Bali Beaches"
-              body="Relax on the pristine beaches of Bali, where turquoise waters meet golden sands, and the gentle rustle of palm trees provides a serene soundtrack to your tropical escape.Relax on the pristine beaches of Bali, where turquoise waters meet golden sands, and the gentle rustle of palm trees provides a serene soundtrack to your tropical escape.
+            <Stack direction={"row"} spacing={2}>
+              <Card
+                image={
+                  "https://images.pexels.com/photos/2707756/pexels-photo-2707756.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                }
+                alt="Soothing Bali Beaches"
+                headline="Soothing Bali Beaches"
+                body="Relax on the pristine beaches of Bali, where turquoise waters meet golden sands, and the gentle rustle of palm trees provides a serene soundtrack to your tropical escape.Relax on the pristine beaches of Bali, where turquoise waters meet golden sands, and the gentle rustle of palm trees provides a serene soundtrack to your tropical escape.
               Relax on the pristine beaches of Bali, where turquoise waters meet golden sands, and the gentle rustle of palm trees provides a serene soundtrack to your tropical escape.
               "
-            />
+              />
+
+              <Card
+                image={
+                  "https://images.pexels.com/photos/208701/pexels-photo-208701.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                }
+                alt="Enchanting Venice Canals"
+                headline="Enchanting Venice Canals"
+                body="Embark on a gondola journey through Venice's winding canals, where historic architecture reflects on tranquil waters, and every bridge holds a story of timeless romance.Embark on a gondola journey through Venice's winding canals, where historic architecture reflects on tranquil waters, and every bridge holds a story of timeless romance.Embark on a gondola journey through Venice's winding canals, where historic architecture reflects on tranquil waters, and every bridge holds a story of timeless romance.
+              "
+              />
+            </Stack>
           </Box>
 
           {/* Form Section */}

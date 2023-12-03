@@ -6,7 +6,7 @@ Welcome to the React POC project! This project is a simple proof of concept for 
 
 - [About the Project](#about-the-project)
 - [Getting Started](#getting-started)
-- [Installation Steps](#Installation Steps)
+- [Installation Steps](#Installation-Steps)
 
 ## About the Project
 
@@ -26,14 +26,14 @@ cd react-poc
 npm start
 ```
 
-## Step 3: Running Storybook
+## Step 2: Running Storybook
 
 ```bash
 cd react-poc
 npm run storybook
 ```
 
-## Step 4: Test using codeceptjs
+## Step 3: Test using codeceptjs
 
 ```bash
 cd react-poc

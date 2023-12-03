@@ -6,26 +6,36 @@ Welcome to the React POC project! This project is a simple proof of concept for 
 
 - [About the Project](#about-the-project)
 - [Getting Started](#getting-started)
+- [Installation Steps](#Installation Steps)
 
 ## About the Project
 
-The React POC project is a demonstration of a React application with various UI components, Storybook for component development and review, and CodeceptJS for UI testing.
-
-### Key Features
-
-- Utilizes React for building UI components.
-- Storybook for component development and review.
-- CodeceptJS for UI testing.
+Welcome to the React POC project! This project is a simple proof of concept for a React application with Storybook and CodeceptJS integration for UI Testing.
 
 ## Getting Started
 
 To get started with this project, follow the steps below.
 
-### Prerequisites
+### Installation Steps
 
-- [Node.js](https://nodejs.org/) installed.
-- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/) package manager.
+## Step 1: Clone & Run the Repository
 
-### Installation
+```bash
+git clone https://github.com/Shubhofficial1/react-poc.git
+cd react-poc
+npm start
+```
 
-- TODO
+## Step 3: Running Storybook
+
+```bash
+cd react-poc
+npm run storybook
+```
+
+## Step 4: Test using codeceptjs
+
+```bash
+cd react-poc
+npm run run-codecept
+```

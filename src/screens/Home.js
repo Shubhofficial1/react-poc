@@ -57,13 +57,13 @@ const Home = () => {
               variant={"h2"}
               style={{
                 fontWeight: "bold",
-                textTransform: "capitalize",
                 background:
                   "linear-gradient(90deg, #4694dc 12.29%, #4abcd5 50%), #ffffff",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
                 backgroundClip: "text",
               }}
+              className={"heading"}
             >
               Explore Your Next Adventure Now
             </Typography>
@@ -83,7 +83,9 @@ const Home = () => {
             </Box>
 
             <Box sx={{ marginTop: "40px" }}>
-              <Button size="large">Explore </Button>
+              <Button size="large" className={"cta"}>
+                Explore
+              </Button>
             </Box>
           </Box>
 

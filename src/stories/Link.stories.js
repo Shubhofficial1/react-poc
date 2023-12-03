@@ -11,7 +11,7 @@ export default {
   },
 };
 
-const Template = (args) => <Link {...args}>Read More</Link>;
+const Template = (args) => <Link {...args}>Go to Home</Link>;
 export const Default = Template.bind({});
 Default.args = {
   href: "http://localhost:3000/",

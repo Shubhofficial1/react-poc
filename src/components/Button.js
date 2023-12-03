@@ -8,14 +8,20 @@ const Button = ({
   onClick,
   children,
   style,
+  className,
 }) => {
+  const buttonStyle = {
+    textTransform: "none",
+    ...style,
+  };
   return (
     <MuiButton
       variant={variant}
       color={color}
       size={size}
       onClick={onClick}
-      sx={style}
+      sx={buttonStyle}
+      className={className}
     >
       {children}
     </MuiButton>

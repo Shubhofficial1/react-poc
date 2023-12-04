@@ -10,6 +10,7 @@ const Input = ({ label, value, type, onChange, size = "small", style }) => {
       size={size}
       type={type}
       sx={style}
+      className={label}
     ></TextField>
   );
 };

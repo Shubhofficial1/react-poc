@@ -38,7 +38,11 @@ const Home = () => {
             Travo
           </Typography>
         </Header>
-        <Container maxWidth="xl" component="main" flexGrow="1">
+        <Container
+          maxWidth="xl"
+          component="main"
+          // flexGrow="1"
+        >
           <CssBaseline />
 
           {/* Hero Section */}
@@ -75,7 +79,11 @@ const Home = () => {
               }}
             >
               {/* Body Component */}
-              <Typography variant={"body1"} style={{ fontWeight: "500" }}>
+              <Typography
+                variant={"body1"}
+                style={{ fontWeight: "500" }}
+                className={"body"}
+              >
                 Discover the world's wonders with our curated travel
                 experiences, turning your wanderlust into extraordinary
                 adventures.
@@ -99,7 +107,11 @@ const Home = () => {
                 justifyContent: "space-between",
               }}
             >
-              <Typography variant={"h6"} style={{ fontWeight: "600" }}>
+              <Typography
+                variant={"h6"}
+                style={{ fontWeight: "600" }}
+                className={"title1"}
+              >
                 Plan Your Next Trip
               </Typography>
               <Button variant="text" size="small">
@@ -140,6 +152,7 @@ const Home = () => {
             <Typography
               variant={"h6"}
               style={{ fontWeight: "600", margin: "20px 0px" }}
+              className={"title2"}
             >
               Trending now
             </Typography>
@@ -175,6 +188,7 @@ const Home = () => {
               <Typography
                 variant={"h6"}
                 style={{ fontWeight: "500", margin: "20px 0px" }}
+                className={"title3"}
               >
                 Subscribe to our newsletter
               </Typography>
@@ -186,7 +200,9 @@ const Home = () => {
                 onNameChange={handleUsernameChange}
                 onPasswordChange={handlePasswordChange}
                 onSubmit={() => {
-                  alert(`Form Submitted : ${username} | ${password} `);
+                  console.log(`Form Submitted : ${username} | ${password}`);
+                  setUsername("");
+                  setPassword("");
                 }}
               />
             </Box>
@@ -208,7 +224,7 @@ const Home = () => {
               </Link>
             ))}
           </Box>
-          <Typography variant={"caption"}>
+          <Typography variant={"caption"} className={"footer-text"}>
             &copy; 2020-23 All Rights Reserved 🚀
           </Typography>
         </Footer>

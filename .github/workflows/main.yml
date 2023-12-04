@@ -27,12 +27,6 @@ jobs:
       - name: Build
         run: npm run build
 
-      # - name: Deploy to GitHub Pages
-      #   uses: JamesIves/github-pages-deploy-action@4.2.1
-      #   with:
-      #     branch: gh-pages
-      #     folder: build
-
       - name: Deploy with gh-pages
         run: |
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git

@@ -22,7 +22,7 @@ const Button = ({
       onClick={onClick}
       sx={buttonStyle}
       className={className}
-      data-testid="buttons"
+      data-testid="button"
     >
       {children}
     </MuiButton>

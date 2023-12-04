@@ -1,6 +1,7 @@
 import React from "react";
 import { render } from "@testing-library/react";
 import Typography from "../components/Typography";
+// import '@testing-library/jest-dom/extend-expect';
 
 describe("Typography Component", () => {
   test("renders headline correctly", () => {

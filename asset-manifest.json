@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Shubhofficial1/react-poc/static/css/main.a79d1506.css",
+    "main.js": "/Shubhofficial1/react-poc/static/js/main.85bec8a3.js",
+    "index.html": "/Shubhofficial1/react-poc/index.html",
+    "main.a79d1506.css.map": "/Shubhofficial1/react-poc/static/css/main.a79d1506.css.map",
+    "main.85bec8a3.js.map": "/Shubhofficial1/react-poc/static/js/main.85bec8a3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a79d1506.css",
+    "static/js/main.85bec8a3.js"
+  ]
+}

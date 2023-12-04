@@ -39,3 +39,10 @@ npm run storybook
 cd react-poc
 npm run run-codecept
 ```
+
+## Step 4: Test using Jest
+
+```bash
+cd react-poc
+npm test
+```

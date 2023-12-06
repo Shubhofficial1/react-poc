@@ -1,6 +1,7 @@
 # React POC (Proof of Concept)
 
 Welcome to the React POC project! This project is a simple proof of concept for a React application with Storybook and CodeceptJS integration.
+[Live Website](#https://shubhofficial1.github.io/react-poc/)
 
 ## Table of Contents
 
@@ -45,4 +46,16 @@ npm run run-codecept
 ```bash
 cd react-poc
 npm test
+```
+
+## Step 5: Build project
+
+```bash
+npm  run build
+```
+
+## Step 6: Build storybook
+
+```bash
+npm  run build-storybook
 ```

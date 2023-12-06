@@ -25,27 +25,25 @@ To get started with this project, follow the steps below.
 ```bash
 git clone https://github.com/Shubhofficial1/react-poc.git
 cd react-poc
+npm install
 npm start
 ```
 
 ## Step 2: Running Storybook
 
 ```bash
-cd react-poc
 npm run storybook
 ```
 
 ## Step 3: Test using codeceptjs
 
 ```bash
-cd react-poc
 npm run run-codecept
 ```
 
 ## Step 4: Test using Jest
 
 ```bash
-cd react-poc
 npm test
 ```
 

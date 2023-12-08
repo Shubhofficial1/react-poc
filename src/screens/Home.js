@@ -10,6 +10,7 @@ import Footer from "../components/Footer";
 import { Trips } from "../data/trips";
 import { Links } from "../data/links";
 import Link from "../components/Link";
+import { Primary } from "../stories/Button.stories";
 
 const Home = () => {
   const [username, setUsername] = useState("");
@@ -38,11 +39,7 @@ const Home = () => {
             Travo
           </Typography>
         </Header>
-        <Container
-          maxWidth="xl"
-          component="main"
-          // flexGrow="1"
-        >
+        <Container maxWidth="xl" component="main">
           <CssBaseline />
 
           {/* Hero Section */}
@@ -91,9 +88,18 @@ const Home = () => {
             </Box>
 
             <Box sx={{ marginTop: "40px" }}>
-              <Button size="large" className={"cta"}>
+              {/* <Button size="large" className={"cta"}>
                 Explore
-              </Button>
+              </Button> */}
+              <Primary
+                size="large"
+                className="cta"
+                onClick={() => {
+                  console.log("Explore Button clicked");
+                }}
+              >
+                Explore
+              </Primary>
             </Box>
           </Box>
 
@@ -183,7 +189,7 @@ const Home = () => {
           </Box>
 
           {/* Form Section */}
-          <Box>
+          <Box sx={{ padding: "20px 0px" }}>
             <Box>
               <Typography
                 variant={"h6"}

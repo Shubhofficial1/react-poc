@@ -42,13 +42,19 @@ npm run run-codecept
 npm test
 ```
 
-## Step 5: Build project
+## Step 5: Run Code Coverage Report
+
+```bash
+npm run coverage
+```
+
+## Step 6: Build project
 
 ```bash
 npm run build
 ```
 
-## Step 6: Build storybook
+## Step 7: Build storybook
 
 ```bash
 npm run build-storybook

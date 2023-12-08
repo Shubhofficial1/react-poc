@@ -25,7 +25,8 @@
     "eject": "react-scripts eject",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "run-codecept": "npx codeceptjs run --steps"
+    "run-codecept": "npx codeceptjs run --steps",
+    "coverage": "npm test -- src/tests/Button.test.js --coverage --collectCoverageFrom=src/components/Button.js"
   },
   "eslintConfig": {
     "extends": [
